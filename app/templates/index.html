@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Alunos - CrossX</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Cadastro de Alunos - CrossX</h1>
+    <section>
+        <h2>Novo Aluno</h2>
+        <form id="alunoForm">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="endereco" placeholder="Endereço" required>
+            <input type="text" name="cidade" placeholder="Cidade" required>
+            <input type="text" name="estado" placeholder="UF" maxlength="2" required>
+            <input type="text" name="telefone" placeholder="Telefone" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+    <section>
+        <h2>Alunos</h2>
+        <ul id="alunosList"></ul>
+    </section>
+    <section>
+        <h2>Novo Pagamento</h2>
+        <form id="pagamentoForm">
+            <input type="number" name="aluno_id" placeholder="ID do Aluno" required>
+            <input type="date" name="data" required>
+            <input type="number" name="valor" placeholder="Valor" step="0.01" required>
+            <select name="tipo" required>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="cartão">Cartão</option>
+            </select>
+            <button type="submit">Registrar Pagamento</button>
+        </form>
+    </section>
+    <section>
+        <h2>Pagamentos</h2>
+        <ul id="pagamentosList"></ul>
+    </section>
+    <script src="/static/script.js"></script>
+</body>
+</html>
