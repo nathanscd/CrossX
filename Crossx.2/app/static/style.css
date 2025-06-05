@@ -1,0 +1,130 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px;
+    background: linear-gradient(from top, rgb(5, 5, 5), rgb(94, 94, 94));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    padding:10px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: solid black;
+}
+
+input{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #000000;
+    color: white;
+    scale: 1.1;
+}
+
+#Main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+#Alunos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#Alunos > h2{
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+}
+
+#Update{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(224, 224, 224);
+    border: solid rgba(0, 0, 0, 0.377) 0.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    gap:35px;
+    margin: 10px;
+}
+
+#alunoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    width: 20vw;
+    border: solid rgba(0, 0, 0, 0.377) 0.5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#updateAlunoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#desligarForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagamentoForm{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+h1 {
+    color: #000000;
+    font-size: 50px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 5px;
+}
+
+ul {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 8px;
+}
