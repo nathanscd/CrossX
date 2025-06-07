@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Alunos - CrossX</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div id="principal">
+      <h1>CrossX</h1>
+      <section id="Main">
+        <section>
+        <form id="alunoForm">
+          <h2>Novo Aluno</h2>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome"required />
+          <label for="nome">Endereço:</label>
+          <input type="text" name="endereco" required />
+          <label for="nome">Cidade:</label>
+          <input type="text" name="cidade" required />
+          <label for="nome">Estado:</label>
+          <input
+            type="text"
+            name="estado"
+            placeholder="UF"
+            maxlength="2"
+            required
+          />
+          <label for="nome">Telefone:</label>
+          <input type="text" name="telefone" required />
+          <button type="submit">Cadastrar</button>
+        </form>
+      </section>
+
+      <div id="Alunos">
+          <h2>Alunos</h2>
+          <ul id="alunosList"></ul>
+          <div id="Pagamentos">
+              <h2>Pagamentos</h2>
+              <ul id="pagamentosList"></ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="Update">
+      <form id="updateAlunoForm">
+        <h2>Atualizar aluno</h2>
+        <label for="alunoSelect">Selecione o Aluno:</label>
+        <select id="alunoSelect" name="id" required>
+          <option value="" disabled selected>Escolha um aluno</option>
+        </select>
+      
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+      
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required />
+      
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required />
+      
+        <label for="estado">Estado (UF):</label>
+        <input type="text" id="estado" name="estado" maxlength="2" required />
+      
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required />
+      
+        <label for="data_matricula">Data Matrícula:</label>
+        <input type="date" id="data_matricula" name="data_matricula" />
+      
+        <label for="data_vencimento">Data Vencimento:</label>
+        <input type="date" id="data_vencimento" name="data_vencimento" />
+
+        <label for="data_desligamento">Data Desligamento:</label>
+        <input type="date" id="data_desligamento" name="data_desligamento" />
+      
+        <button type="submit">Atualizar Aluno</button>
+        <button type="button" id="deleteAlunoBtn" style="background:red; color:white;">Deletar Aluno</button>
+      </form>
+        <form id="pagamentoForm">
+          <h2>Cadastrar um pagamento</h2>
+          <label for="alunoPagamentoSelect">Aluno:</label>
+          <select id="alunoPagamentoSelect" name="aluno_id" required>
+            <option value="" disabled selected>Escolha um aluno</option>
+          </select>
+        
+          <label for="dataPagamento">Data:</label>
+          <input type="date" id="dataPagamento" name="data" required />
+        
+          <label for="valorPagamento">Valor:</label>
+          <input type="number" id="valorPagamento" name="valor" step="0.01" min="0" required />
+        
+          <label for="tipoPagamento">Tipo:</label>
+          <select id="tipoPagamento" name="tipo" required>
+            <option value="dinheiro">Dinheiro</option>
+            <option value="cartão">Cartão</option>
+            <option value="cartão">Pix</option>
+
+          </select>
+        
+          <button type="submit">Registrar Pagamento</button>
+        </form>
+
+      </section>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

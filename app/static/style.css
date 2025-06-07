@@ -1,0 +1,166 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5vh 0;
+    padding: 0;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Pagamentos >h2{
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+}
+
+label{
+    font-size: 15px;
+    margin: 10px 5px;
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 70px 65px;
+    width:85vw;
+    border-radius: 20px;
+}   
+
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    width: 375px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    height: 35px;
+}
+
+input{
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    height: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    scale: 1.1;
+}
+
+#Main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap:50px;
+}
+
+#Alunos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    background-color: rgb(68, 68, 68);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+#Alunos > h2{
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+}
+
+#Update{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: white;
+    background-color: rgb(68, 68, 68);
+    border: solid rgba(0, 0, 0, 0.377) 0.5px;
+    align-items: left;
+    border-radius: 30px;
+    padding: 20px 50px;
+    gap:35px;
+    width: 20vw;
+}
+
+#alunoForm{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    background-color: rgb(68, 68, 68);
+    width: 20vw;
+    border: solid rgba(0, 0, 0, 0.377) 0.5px;
+    padding: 30px 50px;
+    border-radius: 30px;
+}
+
+#updateAlunoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+li {
+    background-color: #151515;
+    padding:20px;
+    border-radius: 10px;
+}
+
+#pagamentoForm{
+   display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: left; 
+
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+select{
+    border-radius: 5px;
+}
+
+select, button {
+    margin: 5px;
+    padding: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+    color: white;
+    background: #1d1d1d;
+    padding: 20px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 8px;
+}
