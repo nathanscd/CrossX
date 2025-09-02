@@ -7,7 +7,6 @@ O **CrossX** foi projetado para simplificar o gerenciamento de alunos, oferecend
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)  
 ![Flask](https://img.shields.io/badge/Flask-2.0-black?logo=flask)  
 ![REST API](https://img.shields.io/badge/API-RESTful-green)  
-![License](https://img.shields.io/badge/License-MIT-yellow)  
 
 ---
 
